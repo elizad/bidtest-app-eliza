@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const router = express.Router();
 import Competition from "../models/competition";
 
-router.get("/competition", async (req, res) => {
+router.get("/competitions", async (req, res) => {
   try {
     const competition = await Competition.find();
     res.send(competition);
