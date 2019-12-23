@@ -14,16 +14,24 @@ const Bids = props => {
           <tr>
             <th>#</th>
             <th>ID</th>
-            <th>Name</th>
+            <th>Created</th>
+            <th>Accepted</th>
+            <th>Competition</th>
+            <th>Value</th>
+            <th>Offered Capacity</th>
           </tr>
         </thead>
         <tbody>
           {props.bids &&
             props.bids.map((item, i) => (
               <tr key={i}>
-                <td>{i}</td>
-                <td>{item.id}</td>
-                <td colSpan="2">{item.name}</td>
+                  <td>{i}</td>
+                  <td>{item.id}</td>
+                  <td>{item.created}</td>
+                  <td>{item.accepted}</td>
+                  <td>{item.competition}</td>
+                  <td>{item.value}</td>
+                  <td>{item.offered_capacity}</td>
               </tr>
             ))}
         </tbody>

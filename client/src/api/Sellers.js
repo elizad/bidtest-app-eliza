@@ -1,5 +1,5 @@
 import axiosInstance from "./axiosInstance";
 
-export const getSellers = () => {
-  return axiosInstance("/sellers").then(res => res.data);
+export const getSellers = async () => {
+  return await axiosInstance("/sellers").then(res => res.data);
 };

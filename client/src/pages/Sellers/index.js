@@ -24,6 +24,7 @@ const Sellers = props => {
                 <td>{i}</td>
                 <td>{item.id}</td>
                 <td colSpan="2">{item.name}</td>
+                <td>{item.verified ? "True" : "False"}</td>
               </tr>
             ))}
         </tbody>

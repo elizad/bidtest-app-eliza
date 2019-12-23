@@ -11,5 +11,7 @@ const setSellers = res => {
 export const getSellers = () => dispatch => {
   return sellers.getSellers().then(res => {
     dispatch(setSellers(res));
+    // console.log("===================set seller action");
+    // console.log(setSellers(res));
   });
 };
