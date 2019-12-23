@@ -15,15 +15,25 @@ const Competitions = props => {
             <th>#</th>
             <th>ID</th>
             <th>Name</th>
+            <th>buyer</th>
+            <th>open</th>
+            <th>closed</th>
+            <th>minimum_capacity</th>
+            <th>currency</th>
           </tr>
         </thead>
         <tbody>
           {props.competitions &&
             props.competitions.map((item, i) => (
               <tr key={i}>
-                <td>{i}</td>
-                <td>{item.id}</td>
-                <td colSpan="2">{item.name}</td>
+                  <td>{i}</td>
+                  <td>{item.id}</td>
+                  <td>{item.name}</td>
+                  <td>{item.buyer}</td>
+                  <td>{item.open}</td>
+                  <td>{item.closed}</td>
+                  <td>{item.minimum_capacity}</td>
+                  <td>{item.currency}</td>
               </tr>
             ))}
         </tbody>
