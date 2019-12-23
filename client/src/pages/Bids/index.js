@@ -28,7 +28,7 @@ const Bids = props => {
                   <td>{i}</td>
                   <td>{item.id}</td>
                   <td>{item.created}</td>
-                  <td>{item.accepted ? "True" : "False"}</td>
+                  <td>{item.accepted===true  ? "True" : item.accepted===null ? "null" : "False"}</td>
                   <td>{item.competition}</td>
                   <td>{item.value}</td>
                   <td>{item.offered_capacity}</td>
