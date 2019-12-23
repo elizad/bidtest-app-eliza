@@ -13,8 +13,6 @@
 
 You should to install MongoDb Localy
 
-### Run project
-
 #### Server
 
 need to have mongo up and running because db is local
@@ -27,3 +25,13 @@ npm run start
 npm test
 
 ```
+
+### Run project
+
+http://localhost:7000/api/competition
+
+http://localhost:7000/api/sellers
+
+http://localhost:7000/api/buyers
+
+http://localhost:7000/api/bids
