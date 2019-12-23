@@ -9,39 +9,13 @@ In the project directory, you can run:
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
@@ -66,3 +40,60 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+Piclo bidding challenge :tada: :battery: :chart_with_upwards_trend: :metal:
+
+Thanks for your interest in joining the Piclo team. Please complete the tasks below. You should spend about 2 hours on this. If you'd like to spend longer, then check out a separate branch for additional work.
+
+We use Django and VueJS, but we're open to other technologies.
+
+## Business Logic
+
+The following logic closely mirrors that of our production system. Depending on which track you take, some of it may not be relevant, so feel free to skim this part on first read.
+
+The [Piclo platform](https://picloflex.com) allows **buyers** (system operators) to advertise **competitions** for procuring energy from **sellers** (flex providers). Sellers can then submit **bids** against competitions.
+
+The following relations are in place:
+
+- a buyer has many competitions
+- a competition has many bids
+- a seller has many bids
+
+A bid is **successful** if the following is true:
+
+- its `offered_capacity` is equal to or greater than than the competition's `minimum_capacity`
+- its `accepted` state is true
+- its associated `seller`'s `verified` state is true
+- it was created within the associated competition's `open` and `closed` dates
+
+A competition has the following states:
+
+- _pending_ when the competition's `open` and `closed` date/times are in the future
+- _open_ when the `open` value is in the past, but `closed` is in the future
+- _closed_ when `open` and `closed` are in the past
+
+Assume competitions' `open` / `closed` date/times are always sequential
+
+Capacity values use MW units
+
+## Task
+
+Dummy data from backend `buyers`, `sellers`, `competitions` and `bids` microservices can be found in the `data` folder.
+
+Choose the track most suited to demonstrate your abilities.
+
+### Frontend track
+
+1. Build a data structure representing a list of **successful** bids by ID.
+2. Build a data structure which to represent **closed** competitions, containing:
+
+- The competition's `name` and that of its associated **buyer**
+- the total value of successful bids in the competition
+- the total volume of `offered_capacity` for successful bids
+
+3. Build a data structure to represent competitions including its `name` and a value representing a percentage of **successful** bids
+4. Build a list of the top 10 buyers by number of competitions (irrespective of status)
+5. Display this data on a single page. We've intentionally left this vague.
+6. Update the README with any provisioning steps for running the code and/or tests
+
+Assume you have lazy backend colleagues and data returned from the backend has not yet implemented the above logic (aside from competitions' `open` and `closed` dates being sequential)

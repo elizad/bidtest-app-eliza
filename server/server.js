@@ -1,5 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
+import { seed } from "./db/fakeDataInit";
+import buyers from "./routes/buyers";
+
+import { models, connectDb } from "./db/mongo";
 
 const port = 7000;
 
@@ -14,6 +18,11 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use("/api", buyers);
+
 app.listen(port, () => {
+  connectDb();
+  seed();
   console.log("We are live on " + port);
 });
