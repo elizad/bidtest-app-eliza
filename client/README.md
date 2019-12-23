@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App]. 
+It using the local mongo db so it need to had the sever part open, preferable running in parallel for the best speed of bids api
 
 ## Available Scripts
 
@@ -17,27 +18,27 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### Code Splitting
+##### Code Splitting
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+#### Analyzing the Bundle Size
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+##### Making a Progressive Web App
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+##### Advanced Configuration
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+##### Deployment
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
+#### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
