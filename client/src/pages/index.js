@@ -7,6 +7,7 @@ import Bids from "./Bids";
 import Buyers from "./Buyers";
 import Competitions from "./Competitions";
 import Sellers from "./Sellers";
+import TopTen from './TopTen';
 
 const Routes = () => {
   return (
@@ -14,6 +15,7 @@ const Routes = () => {
       <Layout>
         <Route path="/" exact component={Bids} />
         <Route path="/buyers" component={Buyers} />
+        <Route path="/topten" component={TopTen} />
         <Route path="/sellers" component={Sellers} />
         <Route path="/competitions" component={Competitions} />
       </Layout>
