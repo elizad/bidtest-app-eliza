@@ -17,6 +17,8 @@ You should to install MongoDb Localy
 
 #### Server
 
+need to have mongo up and running because db is local
+
 ```
 mongo
 cd server

@@ -2,6 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import { seed } from "./db/fakeDataInit";
 import buyers from "./routes/buyers";
+import bids from "./routes/bids";
+import sellers from "./routes/sellers";
+import competition from "./routes/competition";
 
 import { models, connectDb } from "./db/mongo";
 
@@ -20,6 +23,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api", buyers);
+app.use("/api", bids);
+app.use("/api", sellers);
+app.use("/api", competition);
 
 app.listen(port, () => {
   connectDb();
