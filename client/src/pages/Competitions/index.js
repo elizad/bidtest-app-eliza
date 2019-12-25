@@ -8,7 +8,7 @@ const Competitions = props => {
     props.getBids()
   }, [])
     const getSuccefulBids = (id) => {
-        let filtered = props.bids.filter(item => item.competition == id )
+        let filtered = props.bids.filter(item => item.competition === id )
         let accepted  = filtered.filter(item => item.accepted === true)
         return parseInt(filtered.length / accepted.length)
     }

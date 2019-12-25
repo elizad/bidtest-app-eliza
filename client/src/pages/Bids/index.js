@@ -7,14 +7,15 @@ const Bids = props => {
     props.getBids();
   }, [])
     const returnTotal = () => {
-        let filtered = props.bids.filter(item => item.accepted == true)
+        let filtered = props.bids.filter(item => item.accepted === true)
         var res = filtered.length!== 0 && filtered.reduce((sum, current) => { return sum + Number(current.value)}, 0)
         console.log(filtered);
         return res
     }
     const returnTotalCapacity = () => {
-        let filtered = props.bids.filter(item => item.accepted == true)
+        let filtered = props.bids.filter(item => item.accepted === true)
         var res = filtered.length!== 0 && filtered.reduce((sum, current) => { return sum + Number(current.offered_capacity)}, 0)
+        console.log("filterd===");
         console.log(filtered);
         return res
     }

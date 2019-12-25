@@ -8,8 +8,8 @@ const setBids = res => {
   };
 };
 
-export const getBids = () => dispatch => {
-  return bids.getBids().then(res => {
+export const getBids = () => async dispatch => {
+  return await bids.getBids().then(res => {
     dispatch(setBids(res));
   });
 };

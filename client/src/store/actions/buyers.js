@@ -8,8 +8,8 @@ const setBuyers = res => {
   };
 };
 
-export const getBuyers = () => dispatch => {
-  return buyers.getBuyers().then(res => {
+export const getBuyers = () => async dispatch => {
+  return await buyers.getBuyers().then(res => {
     dispatch(setBuyers(res));
   });
 };
