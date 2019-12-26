@@ -24,7 +24,7 @@ describe('render store without crushing', () => {
   })
   it('should return the initial state', () => {
     expect(bidsReducer([], [])).toEqual([]);
-  });
+  })
 
   it("render store without crushing", () => {
     const div = document.createElement("div");

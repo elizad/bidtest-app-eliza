@@ -1,7 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Sellers from "../pages/Sellers"
 import configureStore from '../store'
 import { Provider } from 'react-redux'
@@ -12,8 +11,8 @@ import * as types from '../store/types'
 import fetchMock from 'fetch-mock'
 import expect from 'expect' // You can use any testing library
 import sellersReducer from '../store/reducers/sellers'
-const middlewares = [thunk]
-const mockStore = configureMockStore(middlewares)
+const middleware = [thunk]
+const mockStore = configureMockStore(middleware)
 
 
 
@@ -24,7 +23,7 @@ describe('render store without crushing', () => {
   })
   it('should return the initial state', () => {
     expect(sellersReducer([], [])).toEqual([]);
-  });
+  })
 
   it("render store without crushing", () => {
     const div = document.createElement("div");

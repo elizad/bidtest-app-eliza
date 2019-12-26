@@ -12,8 +12,8 @@ import * as types from '../store/types'
 import fetchMock from 'fetch-mock'
 import expect from 'expect' // You can use any testing library
 import buyersReducer from '../store/reducers/buyers'
-const middlewares = [thunk]
-const mockStore = configureMockStore(middlewares)
+const middleware = [thunk]
+const mockStore = configureMockStore(middleware)
 
 
 
@@ -24,7 +24,7 @@ describe('render store without crushing', () => {
   })
   it('should return the initial state', () => {
     expect(buyersReducer([], [])).toEqual([]);
-  });
+  })
 
   it("render store without crushing", () => {
     const div = document.createElement("div");
