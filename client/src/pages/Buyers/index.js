@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { connect } from "react-redux";
-import * as actions from "../../store/actions";
-import { Table } from "react-bootstrap";
+import React, { useState, useEffect } from "react"
+import { connect } from "react-redux"
+import * as actions from "../../store/actions"
+import { Table } from "react-bootstrap"
 const Buyers = props => {
   useEffect(() => {
     props.getBuyers();

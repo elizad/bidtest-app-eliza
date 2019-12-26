@@ -1,9 +1,8 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
+import React from "react"
+import { Route, Switch } from "react-router-dom"
+import Layout from "../Layouts/PageLayout"
 
-import Layout from "../Layouts/PageLayout";
-
-import Bids from "./Bids";
+import Bids from "./Bids"
 import Buyers from "./Buyers";
 import Competitions from "./Competitions";
 import Sellers from "./Sellers";

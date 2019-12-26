@@ -5,13 +5,22 @@ import { Table } from "react-bootstrap";
 const Competitions = props => {
   useEffect(() => {
     props.getCompetitions();
-    props.getBids()
-  }, [])
-    const getSuccefulBids = (id) => {
-        let filtered = props.bids.filter(item => item.competition === id )
-        let accepted  = filtered.filter(item => item.accepted === true)
-        return parseInt(filtered.length / accepted.length)
-    }
+    props.getBids();
+
+  }, []);
+  const getSuccessFullBids = id => {
+    let filtered = props.bids.filter(item => item.competition === id);
+    let accepted = filtered.filter(item => item.accepted === true);
+    return parseInt((accepted.length / filtered.length) * 100);
+  };
+  const getSuccessfulBidsValue = id => {
+    let filtered = props.bids.filter(item => item.competition === id);
+    let accepted = filtered.filter(item => item.accepted === true);
+    let sum = accepted.reduce((sum, current) => {
+      return sum + Number(current.value);
+    }, 0);
+    return sum;
+  };
   return (
     <div>
       <h1>Competitions</h1>
@@ -27,21 +36,23 @@ const Competitions = props => {
             <th>minimum_capacity</th>
             <th>currency</th>
             <th>successful bids</th>
+            <th>total value of bids</th>
           </tr>
         </thead>
         <tbody>
           {props.competitions &&
             props.competitions.map((item, i) => (
               <tr key={i}>
-                  <td>{i}</td>
-                  <td>{item.id}</td>
-                  <td>{item.name}</td>
-                  <td>{item.buyer}</td>
-                  <td>{item.open}</td>
-                  <td>{item.closed}</td>
-                  <td>{item.minimum_capacity}</td>
-                  <td>{item.currency}</td>
-                  <td>{props.bids && getSuccefulBids(item.id)}</td>
+                <td>{i}</td>
+                <td>{item.id}</td>
+                <td>{item.name}</td>
+                <td>{item.buyer}</td>
+                <td>{item.open}</td>
+                <td>{item.closed}</td>
+                <td>{item.minimum_capacity}</td>
+                <td>{item.currency}</td>
+                <td>{props.bids && getSuccessFullBids(String(item.id))}</td>
+                <td>{props.bids && getSuccessfulBidsValue(String(item.id))}</td>
               </tr>
             ))}
         </tbody>
@@ -52,15 +63,15 @@ const Competitions = props => {
 
 const mapStateToProps = state => {
   return {
-      competitions: state.competitions,
-      bids: state.bids
+    competitions: state.competitions,
+    bids: state.bids
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-      getCompetitions: () => dispatch(actions.competitions.getCompetitions()),
-      getBids: () => dispatch(actions.bids.getBids())
+    getCompetitions: () => dispatch(actions.competitions.getCompetitions()),
+    getBids: () => dispatch(actions.bids.getBids())
   };
 };
 
