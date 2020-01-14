@@ -15,6 +15,7 @@ const Sellers = props => {
             <th>#</th>
             <th>ID</th>
             <th>Name</th>
+            <th>Verified</th>
           </tr>
         </thead>
         <tbody>
@@ -23,7 +24,7 @@ const Sellers = props => {
               <tr key={i}>
                 <td>{i}</td>
                 <td>{item.id}</td>
-                <td colSpan="2">{item.name}</td>
+                <td >{item.name}</td>
                 <td>{item.verified ? "True" : "False"}</td>
               </tr>
             ))}
