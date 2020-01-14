@@ -40,13 +40,12 @@ function getOpenCompetitions(competitionsArr, today) {
 }
 
 
-
 const Competitions = props => {
   useEffect(() => {
     props.getCompetitions();
     props.getBids();
 
-  }, []);
+  }, [props]);
   const getSuccessFullBids = id => {
     let filtered = props.bids.filter(item => item.competition === id);
     let accepted = filtered.filter(item => item.accepted === true);
@@ -64,9 +63,24 @@ const Competitions = props => {
   const sortedCompetitopns = sortCompetitions(props.competitions)
 
 
+  const getCompetitionState = (competition) => {
+    const today = new Date();
+    const open = new Date(competition.open);
+    const closed = new Date(competition.closed);
+    if (today - open >= 0 && closed - today >= 0) {
+      return 'Open'
+    }
+    if (today > closed) {
+      return 'Closed'
+    }
+    if (today < open) {
+      return 'Pending'
+    }
+  }
+
   return (
     <div>
-      <h1>Competitions</h1>
+      <h1 className="my-3">Competitions</h1>
       <Table striped bordered hover size="sm">
         <thead>
           <tr>
