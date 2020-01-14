@@ -74,9 +74,10 @@ const Competitions = props => {
             <th>ID</th>
             <th>Name</th>
             <th>Buyer</th>
+            <th>State </th>
             <th>Open Date</th>
             <th>Closed Date</th>
-            <th>Minimum_capacity</th>
+            <th>Min Capacity</th>
             <th>Currency</th>
             <th>Successful bids</th>
             <th>Total value of bids</th>
@@ -89,6 +90,7 @@ const Competitions = props => {
                 <td>{item.id}</td>
                 <td>{item.name}</td>
                 <td>{item.buyer}</td>
+                <td> </td>
                 <td>{item.open}</td>
                 <td>{item.closed}</td>
                 <td>{item.minimum_capacity}</td>
