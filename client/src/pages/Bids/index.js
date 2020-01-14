@@ -3,26 +3,40 @@ import { connect } from "react-redux";
 import * as actions from "../../store/actions";
 import { Table } from "react-bootstrap";
 import SingleBid from "./singleBid";
+import ToggleBidByStateButton from "./toggleBidByStateButton/toggleBidByStateButton";
+
+
 const Bids = props => {
-  useEffect(() => {
+
+    let [active, setActive] = useState(false)
+
+    useEffect(() => {
     props.getBids();
-  }, [])
+  }, [props])
     const returnTotal = () => {
         let filtered = props.bids.filter(item => item.accepted === true)
-        var res = filtered.length!== 0 && filtered.reduce((sum, current) => { return sum + Number(current.value)}, 0)
-        console.log(filtered);
+        let res = filtered.length!== 0 && filtered.reduce((sum, current) => { return sum + Number(current.value)}, 0)
+        console.log(filtered)
         return res
     }
     const returnTotalCapacity = () => {
         let filtered = props.bids.filter(item => item.accepted === true)
         var res = filtered.length!== 0 && filtered.reduce((sum, current) => { return sum + Number(current.offered_capacity)}, 0)
-        console.log("filterd===");
-        console.log(filtered);
         return res
     }
-  return (
+
+    const filter2Bids = props.bids.filter(item=>{
+        if (active) {return item.accepted === true} else {return item.accepted!= true}
+    })
+    const toggleBidByState = () => {
+        setActive(!active)
+    }
+
+
+
+    return (
     <div>
-      <h1>Bids - now I have bids  - list of successful bids by ID.</h1>
+      <h1 className="my-3">Bids </h1>
       <div className="my-3">Total Value of Accepted Bids {"  "}
             {props.bids.length!==0 && returnTotal()}
         </div>
@@ -35,15 +49,15 @@ const Bids = props => {
             <th>#</th>
             <th>ID</th>
             <th>Created</th>
-            <th>Accepted</th>
+            <th>Accepted <ToggleBidByStateButton handleShowTrueAll={toggleBidByState} /></th>
             <th>Competition</th>
             <th>Value</th>
             <th>Offered Capacity</th>
           </tr>
         </thead>
         <tbody>
-          {props.bids &&
-            props.bids.map((item, i) => (
+          {filter2Bids &&
+          filter2Bids.map((item, i) => (
                 //need to wait a bit until is loading // that can ce fixed
              <SingleBid key={i} bidData={item}/>
             ))}

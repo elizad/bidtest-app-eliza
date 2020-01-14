@@ -16,4 +16,4 @@ function SingleBid(props) {
     )
 }
 
-export  default  SingleBid
+export default SingleBid
