@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import * as actions from "../../store/actions";
 import { Table } from "react-bootstrap"
+import SingleCompetition from "./singleCompetition";
 
 function sortCompetitions(competitionsArr) {
   const today = new Date();
@@ -46,12 +47,12 @@ const Competitions = props => {
     props.getBids();
 
   }, [props]);
-  const getSuccessFullBids = id => {
+  const getAllBidCount = id => {
     let filtered = props.bids.filter(item => item.competition === id);
     let accepted = filtered.filter(item => item.accepted === true);
     return parseInt((accepted.length / filtered.length) * 100);
   };
-  const getSuccessfulBidsValue = id => {
+  const getSuccessBidCount = id => {
     let filtered = props.bids.filter(item => item.competition === id);
     let accepted = filtered.filter(item => item.accepted === true);
     let sum = accepted.reduce((sum, current) => {
@@ -60,7 +61,7 @@ const Competitions = props => {
     return sum;
   }
 
-  const sortedCompetitopns = sortCompetitions(props.competitions)
+  const sortedCompetitions = sortCompetitions(props.competitions)
 
 
   const getCompetitionState = (competition) => {
@@ -77,6 +78,7 @@ const Competitions = props => {
       return 'Pending'
     }
   }
+
 
   return (
     <div>
@@ -98,33 +100,22 @@ const Competitions = props => {
           </tr>
         </thead>
         <tbody>
-        {sortedCompetitopns && sortedCompetitopns.map((item, i) => (
-              <tr key={i}>
-                <td>{i}</td>
-                <td>{item.id}</td>
-                <td>{item.name}</td>
-                <td>{item.buyer}</td>
-                <td> </td>
-                <td>{item.open}</td>
-                <td>{item.closed}</td>
-                <td>{item.minimum_capacity}</td>
-                <td>{item.currency}</td>
-                <td>{props.bids && getSuccessFullBids(String(item.id))}</td>
-                <td>{props.bids && getSuccessfulBidsValue(String(item.id))}</td>
-              </tr>
+        {sortedCompetitions && sortedCompetitions.map((item, i) => (
+            <SingleCompetition key={i} competitionData = {item } competitionState={getCompetitionState(item)} getAllBidCount={getAllBidCount}
+                               getSuccessBidCount={getSuccessBidCount} />
             ))}
         </tbody>
       </Table>
     </div>
-  );
-};
+  )
+}
 
 const mapStateToProps = state => {
   return {
     competitions: state.competitions,
     bids: state.bids
-  };
-};
+  }
+}
 
 const mapDispatchToProps = dispatch => {
   return {
