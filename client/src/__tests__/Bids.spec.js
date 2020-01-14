@@ -12,8 +12,8 @@ import * as types from '../store/types'
 import fetchMock from 'fetch-mock'
 import expect from 'expect' // You can use any testing library
 import bidsReducer from '../store/reducers/bids'
-const middleware = [thunk]
-const mockStore = configureMockStore(middleware)
+const middlewares = [thunk]
+const mockStore = configureMockStore(middlewares)
 
 
 
@@ -37,12 +37,12 @@ describe('render store without crushing', () => {
   })
   it('get Requests is passed', () => {
 
-  const store = mockStore({})
+    const store = mockStore({})
 
-  const expectedAction = {
-    type: types.bids.SET_BIDS,
-    res: [{id: 1, name: 'something'}]
-  }
-  expect(actions.bids.setBids([{id: 1, name: 'something'}])).toEqual(expectedAction)
+    const expectedAction = {
+      type: types.bids.SET_BIDS,
+      res: [{id: 1, name: 'something'}]
+    }
+    expect(actions.bids.setBids([{id: 1, name: 'something'}])).toEqual(expectedAction)
   })
 });

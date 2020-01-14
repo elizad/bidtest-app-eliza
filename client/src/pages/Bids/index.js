@@ -21,7 +21,7 @@ const Bids = props => {
     }
   return (
     <div>
-      <h1>Bids</h1>
+      <h1>Bids - now I have bids  - list of successful bids by ID.</h1>
       <div className="my-3">Total Value of Accepted Bids {"  "}
             {props.bids.length!==0 && returnTotal()}
         </div>

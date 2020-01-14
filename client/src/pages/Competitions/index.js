@@ -30,13 +30,13 @@ const Competitions = props => {
             <th>#</th>
             <th>ID</th>
             <th>Name</th>
-            <th>buyer</th>
-            <th>open</th>
-            <th>closed</th>
-            <th>minimum_capacity</th>
-            <th>currency</th>
-            <th>successful bids</th>
-            <th>total value of bids</th>
+            <th>Buyer</th>
+            <th>Open</th>
+            <th>Closed</th>
+            <th>Minimum_capacity</th>
+            <th>Currency</th>
+            <th>Successful bids</th>
+            <th>Total value of bids</th>
           </tr>
         </thead>
         <tbody>
