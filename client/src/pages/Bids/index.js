@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import * as actions from "../../store/actions";
 import { Table } from "react-bootstrap";
+import SingleBid from "./singleBid";
 const Bids = props => {
   useEffect(() => {
     props.getBids();
@@ -43,15 +44,8 @@ const Bids = props => {
         <tbody>
           {props.bids &&
             props.bids.map((item, i) => (
-              <tr key={i}>
-                  <td>{i}</td>
-                  <td>{item.id}</td>
-                  <td>{item.created}</td>
-                  <td>{item.accepted===true  ? "True" : item.accepted===null ? "null" : "False"}</td>
-                  <td>{item.competition}</td>
-                  <td>{item.value}</td>
-                  <td>{item.offered_capacity}</td>
-              </tr>
+                //need to wait a bit until is loading // that can ce fixed
+             <SingleBid key={i} bidData={item}/>
             ))}
         </tbody>
       </Table>
