@@ -1,7 +1,46 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import * as actions from "../../store/actions";
-import { Table } from "react-bootstrap";
+import { Table } from "react-bootstrap"
+
+function sortCompetitions(competitionsArr) {
+  const today = new Date();
+  const pendingCompetitions = getPendingCompetitions(competitionsArr, today);
+  const closedCompetitions = getClosedCompetitions(competitionsArr, today);
+  const openCompetitions = getOpenCompetitions(competitionsArr, today);
+  return [...pendingCompetitions, ...openCompetitions, ...closedCompetitions];
+}
+
+function getPendingCompetitions(competitionsArr, today) {
+
+  const filterCompetitions = competitionsArr.filter(item => {
+    const open = new Date(item.open);
+    return open - today > 0 ? true : false;
+  });
+  return filterCompetitions.sort((a, b) => a.open - b.open);
+}
+
+function getClosedCompetitions(competitionsArr, today) {
+
+  const filterCompetitions = competitionsArr.filter(item => {
+    const closed = new Date(item.close);
+    return today - closed > 0 ? true : false;
+  });
+  return filterCompetitions.sort((a, b) => a.open - b.open);
+}
+
+function getOpenCompetitions(competitionsArr, today) {
+
+  const filterCompetitions = competitionsArr.filter(item => {
+    const open = new Date(item.open);
+    const closed = new Date(item.close);
+    return (today - open >= 0 && closed - today >= 0) ? true : false;
+  })
+  return filterCompetitions.sort((a, b) => a.open - b.open);
+}
+
+
+
 const Competitions = props => {
   useEffect(() => {
     props.getCompetitions();
@@ -18,9 +57,13 @@ const Competitions = props => {
     let accepted = filtered.filter(item => item.accepted === true);
     let sum = accepted.reduce((sum, current) => {
       return sum + Number(current.value);
-    }, 0);
+    }, 0)
     return sum;
-  };
+  }
+
+  const sortedCompetitopns = sortCompetitions(props.competitions)
+
+
   return (
     <div>
       <h1>Competitions</h1>
@@ -31,8 +74,8 @@ const Competitions = props => {
             <th>ID</th>
             <th>Name</th>
             <th>Buyer</th>
-            <th>Open</th>
-            <th>Closed</th>
+            <th>Open Date</th>
+            <th>Closed Date</th>
             <th>Minimum_capacity</th>
             <th>Currency</th>
             <th>Successful bids</th>
@@ -40,8 +83,7 @@ const Competitions = props => {
           </tr>
         </thead>
         <tbody>
-          {props.competitions &&
-            props.competitions.map((item, i) => (
+        {sortedCompetitopns && sortedCompetitopns.map((item, i) => (
               <tr key={i}>
                 <td>{i}</td>
                 <td>{item.id}</td>
