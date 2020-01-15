@@ -3,82 +3,32 @@ import { connect } from "react-redux";
 import * as actions from "../../store/actions";
 import { Table } from "react-bootstrap"
 import SingleCompetition from "./singleCompetition";
+import {
+  sortCompetitions,
+  getAllBidCount,
+  getSuccessBidCount,
+  getCompetitionState,
+  getPendingCompetitions, getClosedCompetitions, getOpenCompetitions
+} from "./helperCompetitionsFunctions"
 
-function sortCompetitions(competitionsArr) {
-  const today = new Date();
-  const pendingCompetitions = getPendingCompetitions(competitionsArr, today);
-  const closedCompetitions = getClosedCompetitions(competitionsArr, today);
-  const openCompetitions = getOpenCompetitions(competitionsArr, today);
-  return [...pendingCompetitions, ...openCompetitions, ...closedCompetitions];
+let today = new Date();
+const sorting = {
+  pending: getPendingCompetitions,
+  open: getOpenCompetitions,
+  close: getClosedCompetitions
 }
-
-function getPendingCompetitions(competitionsArr, today) {
-
-  const filterCompetitions = competitionsArr.filter(item => {
-    const open = new Date(item.open);
-    return open - today > 0 ? true : false;
-  });
-  return filterCompetitions.sort((a, b) => new Date(b.open) - new Date(a.open));
-}
-
-function getClosedCompetitions(competitionsArr, today) {
-
-  const filterCompetitions = competitionsArr.filter(item => {
-    const closed = new Date(item.closed);
-    return today - closed > 0 ? true : false;
-  });
-  return filterCompetitions.sort((a, b) => new Date(b.open) - new Date(a.open));
-}
-
-function getOpenCompetitions(competitionsArr, today) {
-
-  const filterCompetitions = competitionsArr.filter(item => {
-    const open = new Date(item.open);
-    const closed = new Date(item.closed);
-    return (today - open >= 0 && closed - today >= 0) ? true : false;
-  })
-  return filterCompetitions.sort((a, b) => new Date(b.open) - new Date(a.open));
-}
-
 
 const Competitions = props => {
+  const [sortingState, setSort] = useState('pending');
   useEffect(() => {
     props.getCompetitions();
     props.getBids();
 
   }, [props]);
-  const getAllBidCount = id => {
-    let filtered = props.bids.filter(item => item.competition === id);
-    let accepted = filtered.filter(item => item.accepted === true);
-    return parseInt((accepted.length / filtered.length) * 100);
-  };
-  const getSuccessBidCount = id => {
-    let filtered = props.bids.filter(item => item.competition === id);
-    let accepted = filtered.filter(item => item.accepted === true);
-    let sum = accepted.reduce((sum, current) => {
-      return sum + Number(current.value);
-    }, 0)
-    return sum;
-  }
 
-  const sortedCompetitions = sortCompetitions(props.competitions)
-
-
-  const getCompetitionState = (competition) => {
-    const today = new Date();
-    const open = new Date(competition.open);
-    const closed = new Date(competition.closed);
-    if (today - open >= 0 && closed - today <= 0) {
-      return 'Open'
-    }
-    if (today > closed) {
-      return 'Closed'
-    }
-    if (today < open) {
-      return 'Pending'
-    }
-  }
-
+  const sortedCompetitions = sorting[sortingState]
+      ? sorting[sortingState](props.competitions, today)
+      : props.competitions
 
   return (
     <div>
@@ -90,7 +40,14 @@ const Competitions = props => {
             <th>ID</th>
             <th>Name</th>
             <th>Buyer</th>
-            <th>State </th>
+            <th>State
+              <select value={sortingState} id ="selectO" onChange={(e) => setSort(e.target.value)} >
+              <option value='all' > all </option>
+              <option value='pending' > pending</option>
+              <option value='open' > open</option>
+              <option value='close'> close </option>
+            </select>
+            </th>
             <th>Open Date</th>
             <th>Closed Date</th>
             <th>Min Capacity</th>
@@ -100,10 +57,10 @@ const Competitions = props => {
           </tr>
         </thead>
         <tbody>
-        {/*{sortedCompetitions && sortedCompetitions.map((item, i) => (*/}
-        {props.competitions &&
-        props.competitions.map((item, i) => (
-            <SingleCompetition key={i} competitionData = {item } competitionState={getCompetitionState(item)} getAllBidCount={getAllBidCount}
+        {/*{props.competitions &&*/}
+        {/*props.competitions.map((item, i) => (*/}
+        {sortedCompetitions && sortedCompetitions.map((item, i) => (
+            <SingleCompetition key={i} competitionData = {item } competitionState={getCompetitionState(item)} getAllBidCount={(bitId) => getAllBidCount(props.bids, bitId)}
                                getSuccessBidCount={getSuccessBidCount} />
             ))}
         </tbody>
