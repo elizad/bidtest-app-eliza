@@ -18,26 +18,26 @@ function getPendingCompetitions(competitionsArr, today) {
     const open = new Date(item.open);
     return open - today > 0 ? true : false;
   });
-  return filterCompetitions.sort((a, b) => a.open - b.open);
+  return filterCompetitions.sort((a, b) => new Date(b.open) - new Date(a.open));
 }
 
 function getClosedCompetitions(competitionsArr, today) {
 
   const filterCompetitions = competitionsArr.filter(item => {
-    const closed = new Date(item.close);
+    const closed = new Date(item.closed);
     return today - closed > 0 ? true : false;
   });
-  return filterCompetitions.sort((a, b) => a.open - b.open);
+  return filterCompetitions.sort((a, b) => new Date(b.open) - new Date(a.open));
 }
 
 function getOpenCompetitions(competitionsArr, today) {
 
   const filterCompetitions = competitionsArr.filter(item => {
     const open = new Date(item.open);
-    const closed = new Date(item.close);
+    const closed = new Date(item.closed);
     return (today - open >= 0 && closed - today >= 0) ? true : false;
   })
-  return filterCompetitions.sort((a, b) => a.open - b.open);
+  return filterCompetitions.sort((a, b) => new Date(b.open) - new Date(a.open));
 }
 
 
