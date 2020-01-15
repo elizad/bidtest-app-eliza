@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 2 1`] = `
+<button
+  className="button-style btn"
+  data-testid="button"
+  name="showTrueAll"
+>
+  Show All/Accepted
+</button>
+`;

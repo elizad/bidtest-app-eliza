@@ -15,7 +15,7 @@ function SingleCompetition(props) {
 
     return (
         <tr >
-            <td></td>
+            <td>{competitionData.i}</td>
             <td>{competitionData.id}</td>
             <td>{competitionData.name}</td>
             <td>{competitionData.buyer}</td>

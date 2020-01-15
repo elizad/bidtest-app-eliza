@@ -68,7 +68,7 @@ const Competitions = props => {
     const today = new Date();
     const open = new Date(competition.open);
     const closed = new Date(competition.closed);
-    if (today - open >= 0 && closed - today >= 0) {
+    if (today - open >= 0 && closed - today <= 0) {
       return 'Open'
     }
     if (today > closed) {
@@ -100,7 +100,9 @@ const Competitions = props => {
           </tr>
         </thead>
         <tbody>
-        {sortedCompetitions && sortedCompetitions.map((item, i) => (
+        {/*{sortedCompetitions && sortedCompetitions.map((item, i) => (*/}
+        {props.competitions &&
+        props.competitions.map((item, i) => (
             <SingleCompetition key={i} competitionData = {item } competitionState={getCompetitionState(item)} getAllBidCount={getAllBidCount}
                                getSuccessBidCount={getSuccessBidCount} />
             ))}

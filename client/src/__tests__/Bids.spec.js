@@ -26,7 +26,7 @@ describe('render store without crushing', () => {
     expect(bidsReducer([], [])).toEqual([]);
   })
 
-  it("render store without crushing", () => {
+  it("render store without crashing", () => {
     const div = document.createElement("div");
     const store = configureStore()
     ReactDOM.render(

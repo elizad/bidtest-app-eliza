@@ -16,7 +16,6 @@ const Bids = props => {
     const returnTotal = () => {
         let filtered = props.bids.filter(item => item.accepted === true)
         let res = filtered.length!== 0 && filtered.reduce((sum, current) => { return sum + Number(current.value)}, 0)
-        console.log(filtered)
         return res
     }
     const returnTotalCapacity = () => {
@@ -31,8 +30,6 @@ const Bids = props => {
     const toggleBidByState = () => {
         setActive(!active)
     }
-
-
 
     return (
     <div>
@@ -49,7 +46,7 @@ const Bids = props => {
             <th>#</th>
             <th>ID</th>
             <th>Created</th>
-            <th>Accepted <ToggleBidByStateButton handleShowTrueAll={toggleBidByState} /></th>
+            <th><ToggleBidByStateButton handleShowTrueAll={toggleBidByState} /></th>
             <th>Competition</th>
             <th>Value</th>
             <th>Offered Capacity</th>
