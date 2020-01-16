@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react"
 import { connect } from "react-redux"
 import * as actions from "../../store/actions"
 import { Table } from "react-bootstrap"
+import SingleBuyer from "./singleBuyer";
 const Buyers = props => {
   useEffect(() => {
     props.getBuyers();
   }, [props]);
   return (
     <div>
-      <h1>Buyers</h1>
+      <h1 className="my-3">Buyers</h1>
       <Table striped bordered hover size="sm">
         <thead>
           <tr>
@@ -20,11 +21,9 @@ const Buyers = props => {
         <tbody>
           {props.buyers &&
             props.buyers.map((item, i) => (
-              <tr key={i}>
-                <td>{i}</td>
-                <td>{item.id}</td>
-                <td colSpan="2">{item.name}</td>
-              </tr>
+                <SingleBuyer key={i}
+                             index ={i+1}
+                             buyerData={item} />
             ))}
         </tbody>
       </Table>

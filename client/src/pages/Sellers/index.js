@@ -3,13 +3,14 @@ import { connect } from 'react-redux'
 import * as actions from '../../store/actions'
 import { Table } from 'react-bootstrap'
 import SingleSeller from "./singleSeller";
+
 const Sellers = props => {
   useEffect(() => {
     props.getSellers()
   }, [props])
   return (
     <div>
-      <h1>Sellers</h1>
+      <h1 className="my-3">Sellers</h1>
       <Table striped bordered hover size="sm">
         <thead>
           <tr>
@@ -22,7 +23,9 @@ const Sellers = props => {
         <tbody>
           {props.sellers &&
             props.sellers.map((item, i) => (
-             <SingleSeller key ={i} sellerData={item} />
+             <SingleSeller key ={i}
+                           index = {i+1}
+                           sellerData={item} />
             ))}
         </tbody>
       </Table>
