@@ -47,7 +47,9 @@ const Bids = props => {
 
                 {filterBids &&
                 filterBids.map((item, i) => (
-                    <SingleBid key ={i} bidData = {item } />
+                    <SingleBid key ={i}
+                               index={i + 1}
+                               bidData = {item } />
 
                 ))}
                 </tbody>
@@ -58,7 +60,7 @@ const Bids = props => {
 
 const mapStateToProps = state => {
     return {
-        bids: state.bids,
+        bids: state.bids
     }
 }
 
