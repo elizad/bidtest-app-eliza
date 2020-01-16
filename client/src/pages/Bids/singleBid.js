@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react'
 
 
 function SingleBid(props) {
-    const {bidData} = props;
+    const {bidData, index} = props;
     return (
         <tr>
-            <td>{bidData.i}</td>
+            <td>{index}</td>
             <td>{bidData.id}</td>
             <td>{bidData.created}</td>
             <td>{bidData.accepted===true ? 'True' : bidData.accepted===null ? 'null' : 'False'}</td>
