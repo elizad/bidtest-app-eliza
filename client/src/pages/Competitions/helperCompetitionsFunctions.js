@@ -1,6 +1,5 @@
 
 
-
 export function sortCompetitions(competitionsArr) {
     let today = new Date();
     const pendingCompetitions = getPendingCompetitions(competitionsArr, today);
@@ -40,18 +39,18 @@ export function getOpenCompetitions(competitionsArr, today) {
     return filterCompetitions.sort((a, b) => new Date(b.open) - new Date(a.open));
 }
 
-export const getCompetitionState = (competition) => {
-    const today = new Date();
+
+export const getCompetitionState = (competition, today = new Date()) => {
+
     const open = new Date(competition.open);
     const closed = new Date(competition.closed);
-
     if (today - open >= 0 && closed - today >= 0) {
         return 'Open'
     }
     if (today > closed) {
         return 'Closed'
     }
-    if (today < open) {
+    if (today < open ) {
         return 'Pending'
     }
 }
@@ -60,21 +59,14 @@ export const getCompetitionState = (competition) => {
 export const getAllBidCount = (bids, id) => {
     let filtered = bids.filter(item => item.competition === id)
     let accepted = filtered.filter(item => item.accepted === true)
-    return parseInt((accepted.length / filtered.length) * 100)
+    return parseInt((accepted.length / filtered.length || 0) * 100)
 }
 
 
 export const getSuccessBidCount = (bids, id) => {
     let filtered = bids.filter(item => item.competition === id)
     let accepted = filtered.filter(item => item.accepted === true)
-    let sum = accepted.reduce((sum, current) => {
+    return accepted.reduce((sum, current) => {
         return sum + Number(current.value)
     }, 0)
-    return sum
 }
-
-
-
-
-
-

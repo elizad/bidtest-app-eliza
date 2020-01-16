@@ -11,11 +11,11 @@ import React from 'react'
 // }
 
 function SingleCompetition(props) {
-    const {competitionData} = props
+    const {competitionData, index} = props
 
     return (
         <tr >
-            <td>{competitionData.i}</td>
+            <td>{index}</td>
             <td>{competitionData.id}</td>
             <td>{competitionData.name}</td>
             <td>{competitionData.buyer}</td>
