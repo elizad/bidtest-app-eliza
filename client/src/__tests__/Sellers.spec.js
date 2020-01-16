@@ -16,11 +16,12 @@ const mockStore = configureMockStore(middleware)
 
 
 
-describe('render store without crushing', () => {
+describe('render store without crashing', () => {
   afterEach(() => {
     fetchMock.reset()
     fetchMock.restore()
   })
+
   it('should return the initial state', () => {
     expect(sellersReducer([], [])).toEqual([]);
   })
@@ -30,11 +31,12 @@ describe('render store without crushing', () => {
     const store = configureStore()
     ReactDOM.render(
       <Provider store={store}>
-        <Sellers/>
+        <Sellers />
       </Provider>,
-       div);
+       div)
   })
-  it('get Requets is passed', () => {
+
+  it('get requests is passed', () => {
 
   const store = mockStore({})
 

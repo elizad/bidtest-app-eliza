@@ -11,8 +11,9 @@ const Bids = props => {
     let [active, setActive] = useState(false)
 
     useEffect(() => {
-    props.getBids();
+    props.getBids()
   }, [props])
+
     const returnTotal = () => {
         let filtered = props.bids.filter(item => item.accepted === true)
         let res = filtered.length!== 0 && filtered.reduce((sum, current) => { return sum + Number(current.value)}, 0)
@@ -20,12 +21,12 @@ const Bids = props => {
     }
     const returnTotalCapacity = () => {
         let filtered = props.bids.filter(item => item.accepted === true)
-        var res = filtered.length!== 0 && filtered.reduce((sum, current) => { return sum + Number(current.offered_capacity)}, 0)
+        const res = filtered.length!== 0 && filtered.reduce((sum, current) => { return sum + Number(current.offered_capacity)}, 0)
         return res
     }
 
     const filter2Bids = props.bids.filter(item=>{
-        if (active) {return item.accepted === true} else {return item.accepted!= true}
+        if (active) {return item.accepted === true} else {return item.accepted!== true}
     })
     const toggleBidByState = () => {
         setActive(!active)

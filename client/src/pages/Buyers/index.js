@@ -5,7 +5,7 @@ import { Table } from "react-bootstrap"
 const Buyers = props => {
   useEffect(() => {
     props.getBuyers();
-  }, []);
+  }, [props]);
   return (
     <div>
       <h1>Buyers</h1>

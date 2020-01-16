@@ -60,8 +60,10 @@ const Competitions = props => {
         {/*{props.competitions &&*/}
         {/*props.competitions.map((item, i) => (*/}
         {sortedCompetitions && sortedCompetitions.map((item, i) => (
-            <SingleCompetition key={i} competitionData = {item } competitionState={getCompetitionState(item)} getAllBidCount={(bitId) => getAllBidCount(props.bids, bitId)}
-                               getSuccessBidCount={getSuccessBidCount} />
+
+
+            <SingleCompetition key={i} competitionData = {item } competitionState={getCompetitionState(item)} getAllBidCount={(bidId) => getAllBidCount(props.bids, bidId)}
+                               getSuccessBidCount={(bidId) => getSuccessBidCount(props.bids, bidId)} />
             ))}
         </tbody>
       </Table>

@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { connect } from "react-redux";
-import * as actions from "../../store/actions";
-import { Table } from "react-bootstrap";
+import React, { useState, useEffect } from 'react'
+import { connect } from 'react-redux'
+import * as actions from '../../store/actions'
+import { Table } from 'react-bootstrap'
+import SingleSeller from "./singleSeller";
 const Sellers = props => {
   useEffect(() => {
-    props.getSellers();
-  }, []);
+    props.getSellers()
+  }, [props])
   return (
     <div>
       <h1>Sellers</h1>
@@ -21,29 +22,24 @@ const Sellers = props => {
         <tbody>
           {props.sellers &&
             props.sellers.map((item, i) => (
-              <tr key={i}>
-                <td>{i}</td>
-                <td>{item.id}</td>
-                <td >{item.name}</td>
-                <td>{item.verified ? "True" : "False"}</td>
-              </tr>
+             <SingleSeller key ={i} sellerData={item} />
             ))}
         </tbody>
       </Table>
     </div>
-  );
-};
+  )
+}
 
 const mapStateToProps = state => {
   return {
-    sellers: state.sellers
-  };
-};
+    sellers: state.sellers,
+  }
+}
 
 const mapDispatchToProps = dispatch => {
   return {
-    getSellers: () => dispatch(actions.sellers.getSellers())
-  };
-};
+    getSellers: () => dispatch(actions.sellers.getSellers()),
+  }
+}
 
-export default connect(mapStateToProps, mapDispatchToProps)(Sellers);
+export default connect(mapStateToProps, mapDispatchToProps)(Sellers)

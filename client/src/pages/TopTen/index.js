@@ -7,7 +7,7 @@ const TopTen = props => {
   useEffect(function() {
     props.getBuyers();
     props.getCompetitions();
-  }, []);
+  }, [props]);
 
   const filteredArray = () => {
     let newBuyers = []

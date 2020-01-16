@@ -44,6 +44,7 @@ export const getCompetitionState = (competition) => {
     const today = new Date();
     const open = new Date(competition.open);
     const closed = new Date(competition.closed);
+
     if (today - open >= 0 && closed - today >= 0) {
         return 'Open'
     }

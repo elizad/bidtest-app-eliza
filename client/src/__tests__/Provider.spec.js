@@ -7,10 +7,9 @@ import { Provider } from 'react-redux'
 
 const store = configureStore()
 
-it("store configured without crashing", () => {
-  const div = document.createElement("div");
+it('store render without crashing', () => {
+  const div = document.createElement('div')
   ReactDOM.render(
-    <Provider store={store}>
-    </Provider>,
-     div);
-});
+    <Provider store={store} />,
+     div)
+})

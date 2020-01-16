@@ -1,13 +1,13 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import ReactDOM from 'react-dom'
-import Layout from "../Layouts/PageLayout/index.js";
+import Layout from '../Layouts/PageLayout/index.js'
 
 
-it("renders the Nav layout without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(<Layout />, div);
-});
+it('renders the Nav layout without crashing', () => {
+  const div = document.createElement('div')
+  ReactDOM.render(<Layout />, div)
+})
 
 // test("React-Bootstrap App", () => {
 //   const { getByText } = render(<App />);
