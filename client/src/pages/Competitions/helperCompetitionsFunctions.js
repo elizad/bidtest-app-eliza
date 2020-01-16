@@ -9,7 +9,6 @@ export function sortCompetitions(competitionsArr) {
 }
 
 export function getPendingCompetitions(competitionsArr, today) {
-
     const filterCompetitions = competitionsArr.filter(item => {
         const open = new Date(item.open);
         return open - today > 0 ? true : false;
@@ -19,7 +18,6 @@ export function getPendingCompetitions(competitionsArr, today) {
 }
 
 export function getClosedCompetitions(competitionsArr, today) {
-
     const filterCompetitions = competitionsArr.filter(item => {
         const closed = new Date(item.closed);
         return today - closed > 0 ? true : false;
@@ -28,20 +26,16 @@ export function getClosedCompetitions(competitionsArr, today) {
 }
 
 export function getOpenCompetitions(competitionsArr, today) {
-
     const filterCompetitions = competitionsArr.filter(item => {
         const open = new Date(item.open);
         const closed = new Date(item.closed);
-        // console.log (today - open === 0 && closed - today  : false;)
         return (today - open >= 0 && closed - today > 0) ? true : false;
 
     })
     return filterCompetitions.sort((a, b) => new Date(b.open) - new Date(a.open));
 }
 
-
 export const getCompetitionState = (competition, today = new Date()) => {
-
     const open = new Date(competition.open);
     const closed = new Date(competition.closed);
     if (today - open >= 0 && closed - today >= 0) {

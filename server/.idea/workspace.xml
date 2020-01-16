@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25d2ba33-ab49-4ece-bb66-efd5e60144e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../client/src/pages/Bids/toggleBidByStateButton/__test__/test.toggleBidByStateButton.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/pages/Sellers/helperSellers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client/src/pages/TopTen/singleTopTen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/__tests__/Bids.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/__tests__/Bids.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/__tests__/Buyers.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/__tests__/Buyers.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/__tests__/Competitions.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/__tests__/Competitions.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/__tests__/Layout.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/__tests__/Layout.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/__tests__/Provider.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/__tests__/Provider.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/__tests__/Sellers.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/__tests__/Sellers.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Bids/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Bids/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Bids/toggleBidByStateButton/__test__/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Bids/toggleBidByStateButton/__test__/button.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Bids/toggleBidByStateButton/toggleBidByStateButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Bids/toggleBidByStateButton/toggleBidByStateButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Buyers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Buyers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Competitions/helperCompetitionsFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Competitions/helperCompetitionsFunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Competitions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Competitions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Competitions/tests/helperCompetitionsFunctions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Competitions/tests/helperCompetitionsFunctions.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Sellers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Sellers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Sellers/singleSeller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/Sellers/singleSeller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/TopTen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/pages/TopTen/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/fakeDataInit.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/fakeDataInit.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/bids.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/fakeDataInit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/mongo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/bids.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/bids.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/buyers.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/db/fakeDataInit.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="312" />
+    <option name="y" value="165" />
+    <option name="width" value="2028" />
+    <option name="height" value="1242" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25d2ba33-ab49-4ece-bb66-efd5e60144e4" name="Default Changelist" comment="" />
+      <created>1579170472181</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579170472181</updated>
+      <workItem from="1579170474021" duration="838000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="838000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="208" y="110" width="1352" height="828" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24942966" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data/bids.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/buyers.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/fakeDataInit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/mongo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/bids.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/bids.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

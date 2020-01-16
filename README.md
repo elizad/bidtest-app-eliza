@@ -7,6 +7,28 @@ We use Django and VueJS, but we're open to other technologies.
 
 ## Business Logic
 
+How to run it 
+1  - dependencies:  mongo, npm (6.12.1), node (v13.1.0) installed locally 
+2 -  download the repo locally  
+https://github.com/Piclo/code-challenge-elizad/tree/client/  
+3  Go to  "server" folder - cd server 
+(from console or from visual code console  or from webpack console)
+ - npm install
+ - npm run start or npm start (is stating the nodemon   for dev environment , for production I remove the nodemon library )
+ (docker is missing because I run out of space on my actual computer on drive C ) 
+The app is running on http://localhost:7000/api/{name}   
+ 
+4 Go to client folder - cd client from a new console 
+- npm install 
+- npm start 
+
+The app is running on http://localhost:3000 
+
+
+
+
+
+
 The following logic closely mirrors that of our production system. Depending on which track you take, some of it may not be relevant, so feel free to skim this part on first read.
 
 The [Piclo platform](https://picloflex.com) allows **buyers** (system operators) to advertise **competitions** for procuring energy from **sellers** (flex providers). Sellers can then submit **bids** against competitions.

@@ -1,46 +1,32 @@
 This project was bootstrapped with [Create React App]. 
 It using the local mongo db so it need to had the sever part open, preferable running in parallel for the best speed of bids api
 
-## Available Scripts
+## How to run it
+1 - dependencies: 
+mongo 
+mongodb-win32-x86_64-2012plus-4.2.2-signed  , 
+npm (6.12.1), 
+node
+(v13.1.0) installed locally
 
-In the project directory, you can run:
+2 - download the repo locally
+https://github.com/Piclo/code-challenge-elizad/tree/client/
+https://github.com/Piclo/code-challenge-elizad/tree/client/server
+3 Go to "server" folder - cd server
+(from console or from visual code console or from webpack console)
+- npm install
+- npm run start or npm start (is stating the nodemon for dev
+environment , for production I remove the nodemon library )
+(docker is missing because I run out of space on my actual computer on
+drive C )
+The app is running on http://localhost:7000/api/{name}
 
-### `npm start`
+4 Go to client folder - cd client from a new console
+- npm install
+- npm start
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The app is running on http://localhost:3000
 
-### `npm test`
-
-### `npm run build`
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-##### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-#### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-##### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-##### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-##### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-#### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 Piclo bidding challenge :tada: :battery: :chart_with_upwards_trend: :metal:
 

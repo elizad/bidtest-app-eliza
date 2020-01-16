@@ -18,17 +18,17 @@ export const seed = async () => {
     //   await Buyers.collection.drop()
     await Buyers.insertMany(wordsbuyers);
     const buyers = await Buyers.find();
-    // console.log("Buyers:" +  buyers);
+
 
     // await Sellers.collection.drop()
     await Sellers.insertMany(wordsSellers);
     const sellers = await Sellers.find();
-    //   console.log("see sellers" + sellers);
+
 
     // await Bids.collection.drop()
     await Bids.insertMany(wordsbids);
     const bids = await Bids.find();
-    //  console.log("see bids " + bids);
+
 
     // await Competition.collection.drop()
     await Competition.insertMany(wordscompetition);
