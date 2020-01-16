@@ -5,15 +5,11 @@ import { Table } from 'react-bootstrap'
 import SingleTopTen from './singleTopTen'
 import {compare, filteredArray } from './helperTopTenFunctions'
 
-
 const TopTen = props => {
   useEffect(function () {
     props.getBuyers()
     props.getCompetitions()
   }, [props])
-
-
-
 
   return (
       <div>
