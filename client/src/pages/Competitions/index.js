@@ -23,7 +23,6 @@ const Competitions = props => {
   useEffect(() => {
     props.getCompetitions();
     props.getBids();
-
   }, [props]);
 
   const sortedCompetitions = sorting[sortingState]
@@ -57,8 +56,6 @@ const Competitions = props => {
           </tr>
         </thead>
         <tbody>
-        {/*{props.competitions &&*/}
-        {/*props.competitions.map((item, i) => (*/}
         {sortedCompetitions && sortedCompetitions.map((item, i) => (
             <SingleCompetition key={i}
                                index={i + 1}

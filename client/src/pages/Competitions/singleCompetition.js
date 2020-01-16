@@ -1,20 +1,9 @@
 import React from 'react'
 
-// const getSuccessfulBidsValue = (bids) =>  {
-//
-//     const filtered = bids?bids.filter(item=>item.accepted===true):[];
-//     return filtered.length
-// }
-//
-// const getSuccessFullBids = (bids) => {
-//     return bids?bids.length:0;
-// }
-
 function SingleCompetition(props) {
     const {competitionData, index} = props
-
     return (
-        <tr >
+        <tr>
             <td>{index}</td>
             <td>{competitionData.id}</td>
             <td>{competitionData.name}</td>
@@ -29,6 +18,5 @@ function SingleCompetition(props) {
         </tr>
     )
 }
-
 
 export default SingleCompetition
