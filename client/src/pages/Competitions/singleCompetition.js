@@ -8,7 +8,7 @@ function SingleCompetition(props) {
             <td>{competitionData.id}</td>
             <td>{competitionData.name}</td>
             <td>{competitionData.buyer}</td>
-            <td>{props.competitionState}</td>
+            <td className={props.competitionState}>{props.competitionState}</td>
             <td>{competitionData.open}</td>
             <td>{competitionData.closed}</td>
             <td>{competitionData.minimum_capacity}</td>
