@@ -12,6 +12,6 @@ code {
     monospace;
 }
 
-.Pending {background: orange}
-.Closed {background: red}
-.Open {background: green}
+.Pending {background: orange!important;}
+.Closed {background: red!important;}
+.Open {background: lawngreen!important;}

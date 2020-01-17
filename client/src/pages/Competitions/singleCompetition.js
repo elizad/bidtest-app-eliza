@@ -3,12 +3,12 @@ import React from 'react'
 function SingleCompetition(props) {
     const {competitionData, index} = props
     return (
-        <tr>
+        <tr className={props.competitionState}>
             <td>{index}</td>
             <td>{competitionData.id}</td>
             <td>{competitionData.name}</td>
             <td>{competitionData.buyer}</td>
-            <td className={props.competitionState}>{props.competitionState}</td>
+            <td >{props.competitionState}</td>
             <td>{competitionData.open}</td>
             <td>{competitionData.closed}</td>
             <td>{competitionData.minimum_capacity}</td>
