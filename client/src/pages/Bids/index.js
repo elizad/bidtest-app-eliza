@@ -14,9 +14,7 @@ const Bids = props => {
         props.getBids()
     }, [props])
 
-    const filterBids = props.bids.filter(item=>{
-        if (active) {return item.accepted === true} else {return item.accepted!== true}
-    })
+    const filterBids = props.bids.filter(item => active === item.accepted)
 
     const toggleBidByState = () => {
         setActive(!active)
