@@ -8,7 +8,8 @@ const Layout = props => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/">Bids</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/Bids">Bids</Nav.Link>
             <Nav.Link href="/topten">Top Ten Buyers</Nav.Link>
             <Nav.Link href="/buyers">Buyers</Nav.Link>
             <Nav.Link href="/competitions">Competitions</Nav.Link>

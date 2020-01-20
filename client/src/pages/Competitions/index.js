@@ -20,49 +20,13 @@ const sorting = {
 }
 
 
-class FlavorForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {value: 'coconut'};
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
-
-  handleSubmit(event) {
-    alert('Your favorite flavor is: ' + this.state.value);
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Pick your favorite flavor:
-            <select value={this.state.value} onChange={this.handleChange}>
-              <option value="grapefruit">Grapefruit</option>
-              <option value="lime">Lime</option>
-              <option value="coconut">Coconut</option>
-              <option value="mango">Mango</option>
-            </select>
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-    );
-  }
-}
-
 
 const Competitions = props => {
   const [sortingState, setSort] = useState('all')
   useEffect(() => {
     props.getCompetitions()
     props.getBids()
-  }, [props])
+  }, [])
 
   const sortedCompetitions = sorting[sortingState]
       ? sorting[sortingState](props.competitions, today)
@@ -70,8 +34,8 @@ const Competitions = props => {
 
   return (
     <div>
-      <h1 className="my-3"> **closed** competitions</h1>
-      <FlavorForm />,
+      <h1 className="my-3"> All Competitions</h1>
+
       <Table striped bordered hover size="sm">
         <thead>
           <tr>
@@ -113,7 +77,7 @@ const Competitions = props => {
 const mapStateToProps = state => {
   return {
     competitions: state.competitions,
-    bids: state.bids,
+    bids: state.bids
   }
 }
 

@@ -10,18 +10,41 @@ const Bids = props => {
     let [active, setActive] = useState(false)
     useEffect(() => {
         props.getBids()
+        props.getSellers()
+        props.getCompetitions()
     }, [])
 
+    const filterBids = props.bids.filter(bid =>{
+        const matchedSeller = props.sellers.filter(seller=>seller.id===bid.seller&&seller.verified)[0]
+        const active = bid.accepted;
+        const matchedCompetition = props.competitions.filter(c=>c.id===bid.competition)[0];
+        let bidCapacityCondition = true
+        let associatedDateCondition = true
+        if (matchedCompetition) {
+            bidCapacityCondition = bid.offered_capacity >= matchedCompetition.minimum_capacity;
+            const bidDate = new Date(bid.created);
+            const openDate = new Date(matchedCompetition.open);
+            const closedDate = new Date(matchedCompetition.closed);
+            associatedDateCondition = bidDate > openDate && bidDate <=closedDate;
+        }
 
-    const filterBids = props.bids.filter(item => active === item.accepted)
+        return matchedSeller && active && bidCapacityCondition && associatedDateCondition;
+    })
 
     const toggleBidByState = () => {
         setActive(!active)
     }
+    console.info('============>compensations', props.compensations)
+    const getVerifiedSeller = props.bids.filter(bid =>{
+        const matchedSeller = props.sellers.filter(seller=>seller.id===bid.seller&&seller.verified)[0]
+        // const matchbidData = props.bids.offered_capacity >= competitions.minimum_capacity
+        const active = bid.accepted;
+        return matchedSeller && active;
+    })
 
     return (
         <div>
-            <h1 className="my-3">**successful** bids by ID </h1>
+            <h1 className="my-3">Successful bids </h1>
             <div className="my-3">Total Value of Accepted Bids {'  '}
                 {props.bids.length!==0 && returnTotal(props.bids)}
             </div>
@@ -33,13 +56,12 @@ const Bids = props => {
                 <tr>
                     <th>#</th>
                     <th>ID</th>
-                    <th>FILTER by state TRUE <ToggleBidByStateButton handleShowTrueAll={toggleBidByState} /></th>
-                    <th>Created</th>
-                    <th>create date within the associated competition's id `open` and `closed` dates
-</th>
+                    <th> Created</th>
+                    <th>FILTER by state TRUE </th>
+                    <th>Competition id</th>
                     <th>Value</th>
-                    <th>bidData.offered_capacity} >= competition's `minimum_capacity</th>
-                    <th>associated `seller`'s id  ==> `verified` state is true</th>
+                    <th>offered_capacity >= competition's `minimum_capacity</th>
+                    <th>associated seller's id  => `verified` state === true</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -48,7 +70,10 @@ const Bids = props => {
                 filterBids.map((item, i) => (
                     <SingleBid key ={i}
                                index={i + 1}
-                               bidData = {item } />
+                               bidData = {item }
+                               />
+
+
 
                 ))}
                 </tbody>
@@ -59,13 +84,17 @@ const Bids = props => {
 
 const mapStateToProps = state => {
     return {
-        bids: state.bids
+        bids: state.bids,
+        sellers: state.sellers,
+        competitions: state.competitions
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
         getBids: () => dispatch(actions.bids.getBids()),
+        getSellers: () => dispatch(actions.sellers.getSellers()),
+        getCompetitions: () => dispatch(actions.competitions.getCompetitions())
     }
 }
 
