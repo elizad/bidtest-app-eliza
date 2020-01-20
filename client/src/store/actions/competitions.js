@@ -8,8 +8,8 @@ const setCompetitions = res => {
   };
 };
 
-export const getCompetitions = () => async dispatch => {
-  return await competitions.getCompetitions().then(res => {
+export const getCompetitions = () => dispatch => {
+  return competitions.getCompetitions().then(res => {
     dispatch(setCompetitions(res));
   });
 };

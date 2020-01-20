@@ -1,4 +1,4 @@
-import * as helperBids from '../helperBidsFunctions'
+import * as helperBids from '../../pages/Bids/helperBidsFunctions'
 import bidsArr from './mockBids'
 
 

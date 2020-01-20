@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../../store/actions'
 import { Table } from 'react-bootstrap'
-import SingleSeller from "./singleSeller";
+import SingleSeller from './singleSeller'
 
 const Sellers = props => {
   useEffect(() => {
     props.getSellers()
-  }, [props])
+  }, [])
   return (
     <div>
       <h1 className="my-3">Sellers</h1>

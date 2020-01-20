@@ -22,14 +22,14 @@ afterEach(() => {
 
 
 it('it should render toggle button', ()=>{
-    const buttonTitle = 'Show All/ True';
+    const buttonTitle = 'Show All/Accepted';
     act(()=>{
         render(<ToggleBidByStateButton />, container);
     })
     expect(container.textContent).toBe(buttonTitle);
 })
 
-it("toggle function is working ", () => {
+it("toggle function is working", () => {
 
     const mockFunction = jest.fn()
     //ama creat p f spion

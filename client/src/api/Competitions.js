@@ -1,7 +1,7 @@
 import axiosInstance from "./axiosInstance"
 
-export const getCompetitions = async () => {
-  return await axiosInstance("/competitions")
+export const getCompetitions = () => {
+  return axiosInstance("/competitions")
       .then(res => res.data)
       .catch(err => {
         console.log('Error: ', err)

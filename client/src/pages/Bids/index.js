@@ -6,13 +6,12 @@ import {returnTotal,returnTotalCapacity} from './helperBidsFunctions'
 import SingleBid from './singleBid'
 import ToggleBidByStateButton from './toggleBidByStateButton/toggleBidByStateButton'
 
-
-
 const Bids = props => {
     let [active, setActive] = useState(false)
     useEffect(() => {
         props.getBids()
-    }, [props])
+    }, [])
+
 
     const filterBids = props.bids.filter(item => active === item.accepted)
 
@@ -22,7 +21,7 @@ const Bids = props => {
 
     return (
         <div>
-            <h1 className="my-3">Bids </h1>
+            <h1 className="my-3">**successful** bids by ID </h1>
             <div className="my-3">Total Value of Accepted Bids {'  '}
                 {props.bids.length!==0 && returnTotal(props.bids)}
             </div>
@@ -34,11 +33,13 @@ const Bids = props => {
                 <tr>
                     <th>#</th>
                     <th>ID</th>
+                    <th>FILTER by state TRUE <ToggleBidByStateButton handleShowTrueAll={toggleBidByState} /></th>
                     <th>Created</th>
-                    <th> <ToggleBidByStateButton handleShowTrueAll={toggleBidByState} /> </th>
-                    <th>Competition</th>
+                    <th>create date within the associated competition's id `open` and `closed` dates
+</th>
                     <th>Value</th>
-                    <th>Offered Capacity</th>
+                    <th>bidData.offered_capacity} >= competition's `minimum_capacity</th>
+                    <th>associated `seller`'s id  ==> `verified` state is true</th>
                 </tr>
                 </thead>
                 <tbody>

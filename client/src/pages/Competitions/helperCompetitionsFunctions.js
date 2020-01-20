@@ -49,13 +49,11 @@ export const getCompetitionState = (competition, today = new Date()) => {
     }
 }
 
-
 export const getAllBidCount = (bids, id) => {
     let filtered = bids.filter(item => item.competition === id)
     let accepted = filtered.filter(item => item.accepted === true)
     return parseInt((accepted.length / filtered.length || 0) * 100)
 }
-
 
 export const getSuccessBidCount = (bids, id) => {
     let filtered = bids.filter(item => item.competition === id)

@@ -1,5 +1,5 @@
 import {mockCompetition, mockBuyers} from './mockTopTen'
-import * as helperTopTen from '../helperTopTenFunctions'
+import * as helperTopTen from '../../pages/TopTen/helperTopTenFunctions'
 
 describe('helper filteredArray functions', function () {
     it('filter top ten ', function () {

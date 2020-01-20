@@ -6,7 +6,7 @@ import SingleBuyer from "./singleBuyer";
 const Buyers = props => {
   useEffect(() => {
     props.getBuyers();
-  }, [props]);
+  }, []);
   return (
     <div>
       <h1 className="my-3">Buyers</h1>

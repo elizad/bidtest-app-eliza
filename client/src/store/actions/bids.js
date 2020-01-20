@@ -1,5 +1,5 @@
 import * as types from "../types";
-import * as bids from "../../api/Bids";
+import * as bids from '../../api/Bids';
 
 const setBids = res => {
   return {

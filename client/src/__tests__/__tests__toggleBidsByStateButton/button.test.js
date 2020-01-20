@@ -1,9 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ToggleBidByStateButton from '../toggleBidByStateButton.js'
+import ToggleBidByStateButton from '../../pages/Bids/toggleBidByStateButton/toggleBidByStateButton.js'
 
 import { render, cleanup } from '@testing-library/react'
-
 
 import renderer from 'react-test-renderer'
 

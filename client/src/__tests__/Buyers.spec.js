@@ -1,19 +1,12 @@
 import React from 'react'
-import { render } from '@testing-library/react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Buyers from '../pages/Buyers'
 import configureStore from '../store'
 import { Provider } from 'react-redux'
-import configureMockStore from 'redux-mock-store'
-import thunk from 'redux-thunk'
-import * as actions from '../store/actions'
-import * as types from '../store/types'
 import fetchMock from 'fetch-mock'
-import expect from 'expect' // You can use any testing library
+import expect from 'expect'
 import buyersReducer from '../store/reducers/buyers'
-const middleware = [thunk]
-const mockStore = configureMockStore(middleware)
+
 
 
 
@@ -34,16 +27,6 @@ describe('render store without crushing', () => {
         <Buyers />
       </Provider>,
        div)
-  });
-
-  it('get requests is passed', () => {
-
-  const store = mockStore({})
-
-  const expectedAction = {
-    type: types.buyers.SET_BUYERS,
-    res: [{id: 1, name: 'something'}],
-  }
-  expect(actions.buyers.setBuyers([{id: 1, name: 'something'}])).toEqual(expectedAction)
   })
+
 })

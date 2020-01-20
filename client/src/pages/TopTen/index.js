@@ -9,7 +9,7 @@ const TopTen = props => {
   useEffect(function () {
     props.getBuyers()
     props.getCompetitions()
-  }, [props])
+  }, [])
 
   return (
       <div>
