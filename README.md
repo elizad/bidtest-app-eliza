@@ -4,6 +4,14 @@ Thanks for your interest in joining the Piclo team. Please complete the tasks  b
 
 We use Django and VueJS, but we're open to other technologies.
 
+## DEAR Piclo TEAM thanks you for the time really appreciate it 
+### I'm not the person that wants to go where is not wanted but let's be honest and just tell me what kind of test you will like too see and what are the test cases you would like to have tested 
+###(at least I want too know where I was wrong and what I can learn from it)
+### in case you would like a different data structure (that's the 1 thing is was coming in my mind all the way around) the best that's work for me is to agree with a mock, quick design of what its expected in the end 
+###(that's why I tried to get in a short call at a point 
+### what I did is to get out the functions and test them again test case 
+### what I expected I don t think so was the final answer (maybe like team - this is what want to see or is something else )
+### I assume that could be my fault and it can be called bad communication 
 
 ## Business Logic
 
@@ -65,7 +73,7 @@ Choose the track most suited to demonstrate your abilities.
 
 ### Frontend track
 
-1. Build a data structure representing a list of **successful** bids by ID.
+1. Build a data structure representing a list of ****successful** bids by ID.** bids by ID.
 2. Build a data structure which to represent **closed** competitions, containing:
  - The competition's `name` and that of its associated **buyer**
  - the total value of successful bids in the competition

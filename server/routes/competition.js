@@ -5,7 +5,7 @@ import Competition from "../models/competition";
 
 router.get("/competitions", async (req, res) => {
   try {
-    const competition = await Competition.find();
+    const competition = await Competition.find().limit(100);;
     res.send(competition);
   } catch (error) {
     res.status(500).send(error);

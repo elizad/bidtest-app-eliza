@@ -26,6 +26,7 @@ app.use("/api", buyers);
 app.use("/api", bids);
 app.use("/api", sellers);
 app.use("/api", competition);
+ /// filtrare dupa open / close / competitii - 
 
 app.listen(port, () => {
   connectDb();

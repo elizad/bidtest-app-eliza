@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="633b77b2-67a9-4ba2-8c90-fe50666042c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Sellers/singleSeller.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Sellers/singleSeller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db/fakeDataInit.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/db/fakeDataInit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/_tests_/buyer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/_tests_/buyer.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/bids.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/bids.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/buyers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/buyers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/competition.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/competition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/sellers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/sellers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/client/node_modules/" />
     <ignored path="$PROJECT_DIR$/server/node_modules/" />
@@ -20,61 +23,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4408922">
+    <splitter split-orientation="horizontal" split-proportion="0.6038314">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/store/types/buyers.js">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/src/pages/Sellers/singleSeller.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" selection-start-line="1" selection-end-line="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/store/types/competitions.js">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/store/types/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <folding>
-                    <element signature="e#0#35#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/setupTests.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/BL - relationship map.JPG">
-              <provider selected="true" editor-type-id="images" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/README.md">
+            <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="-612">
-                    <caret column="55" lean-forward="true" selection-start-column="55" selection-end-column="55" />
+                  <first_editor relative-caret-position="765">
+                    <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -82,26 +39,84 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/store/types/sellers.js">
-              <provider selected="true" editor-type-id="text-editor" />
+            <entry file="file://$PROJECT_DIR$/client/Bl transating requirement.JPG">
+              <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/pages/Buyers/singleBuyer.js">
+            <entry file="file://$PROJECT_DIR$/server/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+                <state relative-caret-position="367">
+                  <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+                  <folding>
+                    <element signature="e#0#30#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/pages/Buyers/index.js">
+            <entry file="file://$PROJECT_DIR$/client/src/Layouts/PageLayout/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+                <state relative-caret-position="153">
+                  <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="46" />
                   <folding>
-                    <element signature="e#0#50#0" expanded="true" />
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/App.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/singleBid.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/pages/Buyers/singleBuyer.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="12" selection-start-column="12" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/pages/Competitions/singleCompetition.js">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/toggleBidByStateButton/toggleBidByStateButton.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -110,27 +125,39 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/src/pages/Competitions/helperCompetitionsFunctions.js">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/pages/Home/helperHomeFunctions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="595">
-                  <caret line="72" selection-start-line="72" selection-end-line="72" />
-                  <folding>
-                    <element signature="n#!!block;n#sortCompetitions#0" />
-                    <element signature="n#!!block;n#getPendingCompetitions#0" />
-                    <element signature="n#!!block;n#getClosedCompetitions#0" />
-                    <element signature="n#!!block;n#getOpenCompetitions#0" />
-                  </folding>
+                <state relative-caret-position="1343">
+                  <caret line="79" selection-start-line="79" selection-end-line="79" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/tests/helperBidsFunctions.test.js">
+            <entry file="file://$PROJECT_DIR$/client/src/pages/Home/singleClosedCompetition.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+                <state relative-caret-position="221">
+                  <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/pages/Home/singleOpenCompetition.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/store/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" selection-start-line="11" selection-end-line="11" />
                   <folding>
                     <element signature="e#0#52#0" expanded="true" />
                   </folding>
@@ -139,22 +166,67 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/helperBidsFunctions.js">
+            <entry file="file://$PROJECT_DIR$/client/src/store/reducers/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" selection-start-line="3" selection-end-line="3" />
+                <state relative-caret-position="102">
+                  <caret line="6" column="21" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/pages/Competitions/tests/helperCompetitionsFunctions.test.js">
+            <entry file="file://$PROJECT_DIR$/client/src/pages/Home/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="867">
-                  <caret line="51" column="32" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="47" />
+                <state relative-caret-position="1700">
+                  <caret line="114" column="52" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
                   <folding>
-                    <element signature="e#0#67#0" expanded="true" />
+                    <element signature="e#0#50#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/pages/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/routes/bids.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/store/actions/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="4" selection-start-line="4" selection-end-line="4" />
+                  <folding>
+                    <element signature="e#0#35#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/routes/competition.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
                 </state>
               </provider>
             </entry>
@@ -170,55 +242,76 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Bids</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/src/pages/Competitions/tests/mockCompetions.js" />
-        <option value="$PROJECT_DIR$/client/package.json" />
-        <option value="$PROJECT_DIR$/client/src/pages/Bids/toggleBidByStateButton/__test__/button.test.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Bids/toggleBidByStateButton/toggleBidByStateButton.js" />
-        <option value="$PROJECT_DIR$/client/src/__tests__/Sellers.spec.js" />
-        <option value="$PROJECT_DIR$/client/src/__tests__/Provider.spec.js" />
-        <option value="$PROJECT_DIR$/client/src/__tests__/Layout.spec.js" />
-        <option value="$PROJECT_DIR$/client/src/__tests__/Buyers.spec.js" />
-        <option value="$PROJECT_DIR$/client/src/__tests__/Competitions.spec.js" />
-        <option value="$PROJECT_DIR$/client/src/__tests__/Bids.spec.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Sellers/helperSellers.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Bids/toggleBidByStateButton/__test__/test.toggleBidByStateButton.test.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Bids/tests/mockBids.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Competitions/tests/helperCompetitionsFunctions.test.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Competitions/helperCompetitionsFunctions.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Competitions/singleCompetition.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Competitions/index.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Bids/singleBid.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Bids/index.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Bids/tests/helperBidsFunctions.test.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Buyers/singleBuyer.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Sellers/index.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Buyers/index.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/Bids/helperBidsFunctions.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/TopTen/helperTopTenFunctions.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/TopTen/tests/mockTopTen.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/TopTen/tests/helperTopTenFunctions.test.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/TopTen/singleTopTen.js" />
-        <option value="$PROJECT_DIR$/client/src/pages/TopTen/index.js" />
-        <option value="$PROJECT_DIR$/client/src/store/reducers/sellers.js" />
-        <option value="$PROJECT_DIR$/client/src/store/reducers/buyers.js" />
-        <option value="$PROJECT_DIR$/client/src/store/reducers/bids.js" />
-        <option value="$PROJECT_DIR$/client/src/store/reducers/competitions.js" />
-        <option value="$PROJECT_DIR$/client/README.md" />
         <option value="$PROJECT_DIR$/client/src/pages/Sellers/singleSeller.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Competitions/singleCompetition.js" />
+        <option value="$PROJECT_DIR$/client/public/manifest.json" />
+        <option value="$PROJECT_DIR$/client/src/index.css" />
+        <option value="$PROJECT_DIR$/server/routes/bids.js" />
+        <option value="$PROJECT_DIR$/server/routes/buyers.js" />
+        <option value="$PROJECT_DIR$/server/routes/competition.js" />
+        <option value="$PROJECT_DIR$/server/routes/sellers.js" />
+        <option value="$PROJECT_DIR$/server/_tests_/buyer.test.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Bids/toggleBidByStateButton/tests/test.toggleBidByStateButton.test.js" />
+        <option value="$PROJECT_DIR$/client/src/store/actions/buyers.js" />
+        <option value="$PROJECT_DIR$/client/src/store/actions/competitions.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Competitions/tests/helperCompetitionsFunctions.test.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Competitions/__tests__Competitions/helperCompetitionsFunctions.test.js" />
+        <option value="$PROJECT_DIR$/client/src/__tests__/__tests__toggleBidsByStateButton/button.test.js" />
+        <option value="$PROJECT_DIR$/client/src/__tests__/Bids.spec.js" />
+        <option value="$PROJECT_DIR$/client/src/__tests__/Buyers.spec.js" />
+        <option value="$PROJECT_DIR$/client/src/__tests__/Layout.spec.js" />
+        <option value="$PROJECT_DIR$/client/src/__tests__/Provider.spec.js" />
+        <option value="$PROJECT_DIR$/client/src/api/axiosInstance.js" />
+        <option value="$PROJECT_DIR$/client/src/__tests__/button/__test__/button.test.js" />
+        <option value="$PROJECT_DIR$/client/src/__tests__/button/__test__/__snapshots__/button.test.js.snap" />
+        <option value="$PROJECT_DIR$/client/src/api/Bids.js" />
+        <option value="$PROJECT_DIR$/client/src/api/Competitions.js" />
+        <option value="$PROJECT_DIR$/client/src/store/actions/index.js" />
+        <option value="$PROJECT_DIR$/client/src/store/actions/bids.js" />
+        <option value="$PROJECT_DIR$/client/src/store/actions/sellers.js" />
+        <option value="$PROJECT_DIR$/client/src/store/index.js" />
+        <option value="$PROJECT_DIR$/client/src/api/Sellers.js" />
+        <option value="$PROJECT_DIR$/client/src/__tests__/Sellers.spec.js" />
+        <option value="$PROJECT_DIR$/client/src/__tests__/Competitions.spec.js" />
+        <option value="$PROJECT_DIR$/client/src/__tests__/__tests__toggleBidsByStateButton/test.toggleBidByStateButton.test.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Competitions/helperCompetitionsFunctions.js" />
+        <option value="$PROJECT_DIR$/client/src/__tests__/__tests__Competitions/helperCompetitionsFunctions.test.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/client/src/api/Buyers.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Buyers/index.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Sellers/index.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/TopTen/index.js" />
+        <option value="$PROJECT_DIR$/client/src/Layouts/PageLayout/index.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Home/singleClosedCompetition.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/index.js" />
+        <option value="$PROJECT_DIR$/client/src/App.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Home/helperHomeFunctions.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Home/index.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Competitions/index.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Bids/index.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Bids/singleBid.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Buyers/singleBuyer.js" />
+        <option value="$PROJECT_DIR$/client/src/pages/Home/singleOpenCompetition.js" />
+        <option value="$PROJECT_DIR$/server/server.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="312" />
-    <option name="y" value="165" />
-    <option name="width" value="2028" />
-    <option name="height" value="1242" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2696" />
+    <option name="y" value="185" />
+    <option name="width" value="1720" />
+    <option name="height" value="770" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -249,140 +342,7 @@
               <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Bids" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Bids" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Bids" type="462c0819:PsiDirectoryNode" />
-              <item name="toggleBidByStateButton" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Bids" type="462c0819:PsiDirectoryNode" />
-              <item name="toggleBidByStateButton" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Bids" type="462c0819:PsiDirectoryNode" />
-              <item name="toggleBidByStateButton" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="__snapshots__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Buyers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Competitions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Sellers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="TopTen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="TopTen" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code-challenge-elizad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code-challenge-elizad" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -402,7 +362,16 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\appreact\code-challenge-elizad\client\src\pages\Home" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\appreact\code-challenge-elizad\client" />
+      <recent name="D:\appreact\code-challenge-elizad\client\src\__tests__" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -416,81 +385,81 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.helper filteredArray functions">
-    <configuration name="helper bids function tests" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$/client" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/client/src/pages/Bids/tests/helperBidsFunctions.test.js" />
-      <test-names>
-        <test-name value="helper bids function tests" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="helper bids function tests.return total bids accepted = true " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.button .matches snapshot 2">
+    <configuration name="button .matches snapshot 1" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$/client" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/client/src/pages/Bids/tests/helperBidsFunctions.test.js" />
+      <test-file value="$PROJECT_DIR$/client/src/__tests__/button/__test__/button.test.js" />
       <test-names>
-        <test-name value="helper bids function tests" />
-        <test-name value="return total bids accepted = true " />
+        <test-name value="button " />
+        <test-name value="matches snapshot 1" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="helper filteredArray functions" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$/client" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/client/src/pages/TopTen/tests/helperTopTenFunctions.test.js" />
-      <test-names>
-        <test-name value="helper filteredArray functions" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="helper getPendingCompetitions from helper functions" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$/client" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/client/src/pages/Competitions/tests/helperCompetitionsFunctions.test.js" />
-      <test-names>
-        <test-name value="helper getPendingCompetitions from helper functions" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="helper getPendingCompetitions from helper functions.getCompetitionState" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="button .matches snapshot 2" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$/client" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/client/src/pages/Competitions/tests/helperCompetitionsFunctions.test.js" />
+      <test-file value="$PROJECT_DIR$/client/src/__tests__/button/__test__/button.test.js" />
       <test-names>
-        <test-name value="helper getPendingCompetitions from helper functions" />
-        <test-name value="getCompetitionState" />
+        <test-name value="button " />
+        <test-name value="matches snapshot 2" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="button " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/client" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/client/src/__tests__/button/__test__/button.test.js" />
+      <test-names>
+        <test-name value="button " />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="matches snapshot 1" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/client" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/client/src/__tests__/button/__test__/button.test.js" />
+      <test-names>
+        <test-name value="matches snapshot 1" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="render store without crashing (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/client" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/client/src/__tests__/button/__test__/button.test.js" />
+      <test-names>
+        <test-name value="render store without crashing" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.helper filteredArray functions" />
-        <item itemvalue="Jest.helper bids function tests" />
-        <item itemvalue="Jest.helper bids function tests.return total bids accepted = true " />
-        <item itemvalue="Jest.helper getPendingCompetitions from helper functions.getCompetitionState" />
-        <item itemvalue="Jest.helper getPendingCompetitions from helper functions" />
+        <item itemvalue="Jest.button .matches snapshot 2" />
+        <item itemvalue="Jest.button .matches snapshot 1" />
+        <item itemvalue="Jest.button " />
+        <item itemvalue="Jest.render store without crashing (1)" />
+        <item itemvalue="Jest.matches snapshot 1" />
       </list>
     </recent_temporary>
   </component>
@@ -507,43 +476,50 @@
       <workItem from="1579089959647" duration="14354000" />
       <workItem from="1579128660110" duration="11391000" />
       <workItem from="1579177295956" duration="10106000" />
+      <workItem from="1579296415756" duration="8539000" />
+      <workItem from="1579306986964" duration="6552000" />
+      <workItem from="1579362946548" duration="3341000" />
+      <workItem from="1579506904915" duration="6283000" />
+      <workItem from="1579692043168" duration="1779000" />
+      <workItem from="1579711059637" duration="599000" />
+      <workItem from="1579916467522" duration="2730000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="helper_bids_function_tests_return_total_bids_accepted_=_true_ - 2020.01.16 at 14h 04m 40s.xml">
-      <configuration name="helper bids function tests.return total bids accepted = true " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="button__matches_snapshot_1 - 2020.01.17 at 22h 47m 50s.xml">
+      <configuration name="button .matches snapshot 1" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="helper_bids_function_tests_return_total_bids_accepted_=_true_ - 2020.01.16 at 14h 04m 57s.xml">
-      <configuration name="helper bids function tests.return total bids accepted = true " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="button__matches_snapshot_1 - 2020.01.17 at 22h 48m 33s.xml">
+      <configuration name="button .matches snapshot 1" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="helper_bids_function_tests_return_total_bids_accepted_=_true_ - 2020.01.16 at 14h 06m 01s.xml">
-      <configuration name="helper bids function tests.return total bids accepted = true " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="button_ - 2020.01.17 at 22h 49m 14s.xml">
+      <configuration name="button " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="helper_bids_function_tests_return_total_bids_accepted_=_true_ - 2020.01.16 at 14h 06m 50s.xml">
-      <configuration name="helper bids function tests.return total bids accepted = true " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="button__matches_snapshot_1 - 2020.01.17 at 22h 49m 44s.xml">
+      <configuration name="button .matches snapshot 1" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="helper_bids_function_tests_return_total_bids_accepted_=_true_ - 2020.01.16 at 14h 07m 55s.xml">
-      <configuration name="helper bids function tests.return total bids accepted = true " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Update_snapshot_for_button__matches_snapshot_1 - 2020.01.17 at 22h 49m 53s.xml">
+      <configuration name="Update snapshot for button .matches snapshot 1" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="helper_bids_function_tests_return_total_bids_accepted_=_true_ - 2020.01.16 at 14h 08m 17s.xml">
-      <configuration name="helper bids function tests.return total bids accepted = true " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="button__matches_snapshot_2 - 2020.01.17 at 22h 49m 56s.xml">
+      <configuration name="button .matches snapshot 2" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="helper_bids_function_tests - 2020.01.16 at 14h 08m 34s.xml">
-      <configuration name="helper bids function tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Update_snapshot_for_button__matches_snapshot_2 - 2020.01.17 at 22h 50m 06s.xml">
+      <configuration name="Update snapshot for button .matches snapshot 2" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="helper_filteredArray_functions - 2020.01.16 at 14h 39m 53s.xml">
-      <configuration name="helper filteredArray functions" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="button_ - 2020.01.17 at 22h 50m 17s.xml">
+      <configuration name="button " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="helper_filteredArray_functions - 2020.01.16 at 14h 40m 25s.xml">
-      <configuration name="helper filteredArray functions" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="button__matches_snapshot_1 - 2020.01.17 at 22h 50m 48s.xml">
+      <configuration name="button .matches snapshot 1" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="helper_filteredArray_functions - 2020.01.16 at 14h 41m 20s.xml">
-      <configuration name="helper filteredArray functions" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="button__matches_snapshot_2 - 2020.01.17 at 22h 50m 50s.xml">
+      <configuration name="button .matches snapshot 2" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35851000" />
+    <option name="totallyTimeSpent" value="76558000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -555,310 +531,62 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
+    <frame x="-7" y="157" width="1720" height="770" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20130642" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22228916" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42092153" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30510587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40047392" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32847896" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3275218" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32847896" />
-      <window_info anchor="bottom" x="30" y="477" width="1626" height="153" id="Terminal" order="9" visible="true" weight="0.28891656" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" x="30" y="477" width="1626" height="153" id="Terminal" order="9" sideWeight="0.49578312" weight="0.29623824" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50421685" side_tool="true" visible="true" weight="0.29623824" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.15713425" />
+      <window_info anchor="right" id="Codota" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10475617" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30510587" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40047392" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3275218" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32847896" />
+      <window_info anchor="bottom" x="30" y="477" width="1626" height="153" id="Terminal" order="9" weight="0.90784556" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.15713425" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/src/__tests__/Bids.spec.js</url>
-          <line>47</line>
-          <option name="temporary" value="true" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/src/__tests__/Bids.spec.js</url>
-          <line>22</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/code_challenge_elizad$Update_snapshot_for_button__matches_snapshot_1.info" NAME="Update snapshot for button .matches snapshot 1 Coverage Results" MODIFIED="1579301393133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/code_challenge_elizad$button__matches_snapshot_1.info" NAME="button .matches snapshot 1 Coverage Results" MODIFIED="1579301384360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package-lock.json" />
-    <entry file="file://$PROJECT_DIR$/client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/__tests__/Sellers.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/__tests__/Buyers.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/__tests__/Layout.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/toggleBidByStateButton/tests/button.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/__tests__/Provider.spec.js">
+    <entry file="file://$PROJECT_DIR$/client/src/store/actions/buyers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/toggleBidByStateButton/tests/__snapshots__/button.test.js.snap">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/__tests__/Competitions.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/__tests__/Bids.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Competitions/tests/mockCompetions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/toggleBidByStateButton/toggleBidByStateButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/toggleBidByStateButton/toggleBidByStateButton.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/toggleBidByStateButton/tests/test.toggleBidByStateButton.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding>
-            <element signature="e#1#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/tests/mockBids.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Competitions/singleCompetition.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/tests/helperBidsFunctions.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/singleBid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Sellers/helperSellers.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Competitions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="60" column="39" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="865">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Competitions/tests/helperCompetitionsFunctions.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="32" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Sellers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/TopTen/tests/helperTopTenFunctions.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/TopTen/helperTopTenFunctions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/TopTen/singleTopTen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/TopTen/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/TopTen/tests/mockTopTen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/reducers/bids.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/reducers/buyers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/reducers/competitions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/reducers/sellers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/actions/bids.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
@@ -867,99 +595,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/store/actions/sellers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="187">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/actions/index.js">
+    <entry file="file://$PROJECT_DIR$/client/src/store/actions/bids.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/actions/competitions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/actions/buyers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/types/bids.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/types/buyers.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/types/competitions.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/types/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/setupTests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/BL - relationship map.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-612">
-            <caret column="55" lean-forward="true" selection-start-column="55" selection-end-column="55" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/types/sellers.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Buyers/singleBuyer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Buyers/index.js">
+    <entry file="file://$PROJECT_DIR$/client/src/api/Sellers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/__tests__/Bids.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/__tests__/Layout.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/__tests__/Provider.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/__tests__/Competitions.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/__tests__/Buyers.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -970,23 +665,327 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/store/reducers/bids.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/__tests__/__tests__Competitions/mockCompetions.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/api/Competitions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/pages/Competitions/helperCompetitionsFunctions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="952">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/__tests__/Sellers.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="n#!!block;n#sortCompetitions#0" />
-            <element signature="n#!!block;n#getPendingCompetitions#0" />
-            <element signature="n#!!block;n#getClosedCompetitions#0" />
-            <element signature="n#!!block;n#getOpenCompetitions#0" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/pages/Sellers/singleSeller.js">
+    <entry file="file://$PROJECT_DIR$/client/src/__tests__/__tests__TopTen/helperTopTenFunctions.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/BL - relationship map.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/TopTen/helperTopTenFunctions.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/__tests__/__tests__toggleBidsByStateButton/test.toggleBidByStateButton.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <folding>
+            <element signature="e#1#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/__tests__/__tests__Competitions/helperCompetitionsFunctions.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="96" selection-start-line="6" selection-start-column="96" selection-end-line="6" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/api/Bids.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/api/Buyers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/__tests__/__tests__Bids/helperBidsFunctions.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/__tests__/__tests__Bids/mockBids.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/store/actions/competitions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Buyers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/TopTen/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-348">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Sellers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="765">
+            <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="765">
+            <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/Bl transating requirement.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Layouts/PageLayout/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/singleBid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Buyers/singleBuyer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Competitions/singleCompetition.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/toggleBidByStateButton/toggleBidByStateButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Competitions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Bids/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Home/helperHomeFunctions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Home/singleClosedCompetition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="114" column="52" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/bids.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/store/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/competition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/Home/singleOpenCompetition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/store/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

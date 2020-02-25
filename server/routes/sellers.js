@@ -5,7 +5,7 @@ import Sellers from "../models/sellers.js";
 
 router.get("/sellers", async (req, res) => {
   try {
-    const sellers = await Sellers.find();
+    const sellers = await Sellers.find().limit(100);
     res.send(sellers);
   } catch (error) {
     res.status(500).send(error);

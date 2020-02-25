@@ -5,7 +5,7 @@ import Bids from "../models/bids";
 
 router.get("/bids", async (req, res) => {
   try {
-    const bids = await Bids.find();
+    const bids = await Bids.find().limit(100);
     res.send(bids);
   } catch (error) {
     res.status(500).send(error);
